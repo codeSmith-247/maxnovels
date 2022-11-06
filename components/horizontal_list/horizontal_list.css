@@ -1,0 +1,39 @@
+
+.horizontal_list {
+    height: max-content;
+}
+
+.horizontal_list .list_case {
+    width: 100vw;
+    height: inherit;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.horizontal_list .list_items {
+    width: max-content;
+    height: inherit;
+    padding: 0 2rem;
+}
+
+.horizontal_list .list_control {
+    top: 50%;
+    transform: translateY(-50%) scale(0.8);
+}
+
+.horizontal_list .list_control.left {
+    left: 0;
+}
+
+.horizontal_list .list_control.right {
+    right: 0;
+}
+
+.horizontal_list .list_control .round {
+    --size: 50px;
+    background: var(--color-2);
+    color: var(--color-1);
+    height: var(--size);
+    width: var(--size);
+}

@@ -1,0 +1,28 @@
+.abstract-bg .cover-color {
+    background: var(--cover_color);
+    opacity: var(--cover_opacity);
+}
+
+.darkmode .abstract-bg .cover-color {
+    background: #000;
+    opacity: 0.93;
+}
+
+.abstract-bg .blur-cover {
+    backdrop-filter: blur(var(--blur_intensity));
+}
+
+.abstract-bg img {
+    animation: rotator 60s infinite;
+    transform: rotate(0deg);
+}
+
+@keyframes rotator {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+}

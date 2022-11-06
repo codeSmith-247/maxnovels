@@ -1,0 +1,47 @@
+
+.double_box_section .image {
+    height: 400px;
+    width: 500px;
+}
+
+.double_box_section p {
+    padding: 0 3rem;
+    padding-bottom: .75rem;
+    width: 50%;
+}
+
+.double_box_section .fancy_text {
+    font-size: clamp(3.5vw, 2.5rem, 3.5vw);
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 850px) {
+    .double_box_section .fancy_text {
+        font-size: 2rem;
+    }
+
+    .double_box_section p {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+
+    .double_box_section p {
+        font-size: 80%;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .double_box_section .fancy_text {
+        font-size: 1.7rem;
+        line-height: 1;
+    }
+
+    .double_box_section p {
+        font-size: 80%;
+        width: 100%;
+        padding-top: .75rem;
+    }
+}

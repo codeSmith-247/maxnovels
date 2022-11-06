@@ -1,0 +1,88 @@
+header {
+    min-height: 100vh;
+    height: max-content;
+}
+
+/* header .right .image {
+    transform: scale(1.5);
+} */
+
+header .content {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+
+header .cta_vibes {
+    width: 80%;
+    padding: 1rem 0;
+    top: 3%;
+
+}
+
+header .cta_vibes p {
+    font-size: clamp(.85vw, 1rem, 1.85vw)
+
+}
+header .cta_btn .button {
+    padding: .75rem 2rem;
+}
+
+@media only screen and (max-width: 650px) {
+
+    header {
+        min-height: auto;
+        height: max-content;
+    }
+
+    header .content {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        height: max-content;
+        min-height: auto;
+    }
+
+    header .right .image {
+        transform: scale(1);
+    }
+
+    header .content > * {
+        width: 100%;
+        height: max-content;
+
+    }
+
+    header .right {
+        grid-row: 1/2;
+    }
+
+    header .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .fancy_text {
+        font-size: clamp(5.5vw, 5rem, 3.5vw);
+    }
+
+    header .fancy_border {
+        display: none;
+    }
+
+    header .cta_vibes {
+        padding: .25rem 0;
+        top: 0%;
+    
+    }
+    
+    header .cta_btn .button {
+        padding: .75rem 2rem;
+        margin: 0.52rem 0;
+    }
+
+    header .cta_vibes p {
+        font-size: clamp(2.85vw, 3rem, 1.85vw);
+    }
+}

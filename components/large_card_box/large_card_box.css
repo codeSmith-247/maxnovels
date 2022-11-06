@@ -1,0 +1,25 @@
+.large_card_box {
+    padding-top: 3rem;
+    /* padding-bottom: */
+}
+
+.large_card_box .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.large_card_box .large_card {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .large_card_box .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .large_card_box .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

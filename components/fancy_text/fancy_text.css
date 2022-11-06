@@ -1,0 +1,27 @@
+
+.fancy_text {
+    font-size: clamp(1.5vw, 2.5rem, 3.5vw);
+    font-weight: 900;
+}
+
+.fancy_text {
+    color: #222;
+}
+
+.darkmode .fancy_text {
+    color: #fff;
+}
+
+.fancy_text span span {
+    color: var(--color-6);
+}
+
+.fancy_border {
+    border: 5px solid #333;
+    border-right: 0;
+    height: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+    left: -20px;
+}

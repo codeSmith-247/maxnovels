@@ -1,0 +1,21 @@
+.toggle_button {
+    --size: 40px;
+
+    box-shadow: 0 0 5px #99999945;
+    height: var(--size);
+    width: var(--size);
+}
+
+.toggle_button i {
+    font-size: 150%;
+}
+
+.toggle_button.active i:nth-of-type(2){
+    display: block;
+}
+
+.toggle_button i:nth-of-type(2),
+.toggle_button.active i:nth-of-type(1)
+ {
+    display: none;
+}

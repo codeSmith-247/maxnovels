@@ -1,0 +1,20 @@
+button.icon_button {
+    box-shadow: 0 0 5px #1c1c1c97;
+    color: white;
+    font-size: 90%;
+
+    border: none;
+    outline: none;
+
+    padding: .75rem 2rem;
+    border-radius: .5rem;
+}
+
+button.icon_button .icon {
+    font-size: 150%;
+    padding: 0 .75rem;
+}
+
+button.icon_button:active {
+    box-shadow: none;
+}

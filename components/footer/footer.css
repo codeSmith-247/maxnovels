@@ -1,0 +1,11 @@
+
+footer {
+    background: var(--color-2);
+    color: var(--color-1);
+
+    margin-top: 4rem;
+}
+
+.darkmode footer {
+    background: #222;
+}

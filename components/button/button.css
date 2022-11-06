@@ -1,0 +1,35 @@
+
+.button {
+    background: var(--color-2);
+    border-radius: 5rem;
+    color: #fff;
+    cursor: pointer;
+    padding: .5rem 1rem;
+
+    width: max-content;
+    text-align: center;
+}
+
+.button .button_cover {
+    background: var(--color-5);
+    box-shadow: 0 0 5px #5555557a;
+    border-radius: inherit;
+    height: 90%;
+    width: 96%;
+}
+
+.darkmode .button .button_cover {
+    background: var(--color-6);
+}
+
+.button:hover .button_cover {
+    background: var(--color-3);
+}
+
+.button:active .button_cover {
+    height:  85%;
+    width: 91%;
+}
+
+
+

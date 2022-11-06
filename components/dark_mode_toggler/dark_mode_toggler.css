@@ -1,0 +1,20 @@
+.dark_mode_toggler {
+    background: #333;
+    color: #fff;
+    bottom: 30px;
+
+    right: 30px;
+
+    height: 60px;
+    width: 60px;
+
+    z-index: 4;
+}
+
+.dark_mode_toggler .toggle_button {
+    box-shadow: none;
+}
+
+.dark_mode_toggler .toggle_button.active {
+    color: gold;
+}

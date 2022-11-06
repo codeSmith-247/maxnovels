@@ -1,0 +1,31 @@
+.book_scroll_section {
+    min-height: 100vh;
+}
+
+.darkmode .book_scroll_section {
+    background: #111;
+    color: #fff;
+}
+
+.book_scroll_section .fancy_text {
+    font-size: clamp(1.5vw, 2rem, 3vw);
+    font-weight: 900;
+}
+
+.book_scroll_section .scroll {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .book_scroll_section .scroll {
+        padding: 0 .5rem !important;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .book_scroll_section .fancy_text {
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+}

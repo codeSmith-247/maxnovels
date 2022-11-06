@@ -1,0 +1,13 @@
+body .search_box {
+    border-color: #333;
+    border-radius: 0;
+}
+
+body .search_box input {
+    background: #333;
+    color: #fff;
+}
+
+body .search_box .button {
+    border-radius: 0;
+}

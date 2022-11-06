@@ -1,0 +1,49 @@
+.short_header {
+    background: #111;
+    height: 50vh;
+    width: 100vw;
+}
+
+.short_header .fancy_text, 
+.short_header nav,
+.short_header .nav_button,
+.darkmode .short_header nav.active,
+.darkmode .short_header nav.active .nav_button
+{
+    color: #fff;
+}
+
+
+.short_header nav.active,
+.short_header nav.active .nav_button
+{
+    color: #111;
+}
+
+@media only screen and (max-width: 950px) {
+    .short_header nav .nav_button {
+        color: #111;
+    }
+
+    .short_header .toggle_button.active {
+        color: #111;
+    }
+
+    .darkmode .short_header nav .nav_button {
+        color: #fff;
+    }
+
+    .darkmode .short_header .toggle_button.active {
+        color: #fff;
+    }
+
+    .short_header .fancy_text {
+        font-size:  3rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .short_header .fancy_text {
+        font-size: 2rem;
+    }
+}

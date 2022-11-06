@@ -1,0 +1,97 @@
+.loader {
+    background: var(--white);
+    --white: #d7d4d4;
+    --black: #222222;
+    --hot: #32b1ec;
+    --purple: #6437df;
+    --radius: 20px;
+
+    z-index: 10;
+}
+
+.loader.transparent {
+    background: #000000a0;
+    color: #fff;
+}
+
+.loader.active {
+    animation: fade_away 0.2s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.ball, .base-ball {
+    
+    border-radius: 50%;
+}
+
+.ball {
+    animation: bounce 1s ease infinite;
+    background: var(--hot);
+    height: 60px;
+    width: 70px;
+    top: 30px;
+}
+
+.loader.active .ball {
+    animation: cover_page 0.1s ease forwards;
+    top: 30px;
+    border-radius: 0;
+}
+
+.base-ball {
+    animation: bounce_shadow 1s ease infinite;
+    background: #9999997f;
+    height: 60px;
+    width: 40px;
+    transform: rotateX(85deg);
+}
+
+@keyframes bounce {
+    0%, 100%{
+        width: 65px;
+        top: 31px;
+    }
+
+    90% {
+        width: 60px;
+    }
+
+    50% {
+        top: -30px;
+        width: 60px;
+    }
+}
+
+@keyframes bounce_shadow {
+    0%, 100%{
+        width: 40px;
+    }
+
+    50% {
+        width: 20px;
+    }
+}
+
+@keyframes cover_page {
+    0% {
+        height: 60px;
+        width: 70px;
+    }
+
+    100% {
+        background: var(--black);
+        height: 130vh;
+        width: 130vw;
+    }
+}
+
+@keyframes fade_away {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
