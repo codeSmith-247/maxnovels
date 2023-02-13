@@ -1,0 +1,39 @@
+
+
+.search-box {
+    margin-top: 2rem;
+    padding: 0 4rem;
+}
+
+.search input {
+    width: 96.6%;
+}
+
+section {
+    padding: 0 2rem;
+    margin: 1rem 0;
+}
+
+
+.search-box select {
+    box-shadow: var(--the_shadow);
+    border-radius: 5rem;
+    font-family: 'Poppins', sans-serif;
+    padding: .5rem 1rem;
+}
+
+.darkmode .search-box select {
+    background: var(--mode);
+    box-shadow: var(--darkmode_shadow);
+}
+
+@media only screen and (max-width: 430px) {
+    .search-box {
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .search input {
+        width: 96.6% !important;
+    }
+}

@@ -1,0 +1,189 @@
+
+.alert-case {
+    background: rgba(9, 9, 9, 0.283);
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.alert-case.active {
+    display: flex;
+}
+
+.alert-box {
+    background: #fcfcff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.194);
+    border-radius: 20px;
+    height: max-content;
+    width: 500px;
+    /* margin: auto; */
+}
+
+.darkmode .alert-box {
+    background: #444;
+    color: #fff;
+}
+
+@media screen and (max-width: 650px) {
+    .alert-box {
+        width: 85vw;
+    }
+}
+
+.alert-box .top {
+    height: 50px;
+    border-bottom: 2px solid #333;
+    padding: 1rem;
+}
+
+.alert-box .icon {
+    font-size: 150%;
+}
+
+.alert-content {
+    min-height: 100px;
+    padding: .5rem 2rem;
+}
+
+.alert-content.edit {
+    padding: .5rem 1rem;
+}
+
+@media screen and (max-width: 400px) {
+    .alert-content {
+        padding: .5rem 1rem;
+    }
+}
+
+
+.alert-icon {
+    --size: 100px;
+    background: var(--shadow);
+    height: var(--size);
+    width: var(--size);
+    margin: 0 auto;
+
+    display: none;
+}
+
+.alert-icon img {
+    padding: 0 !important;
+}
+
+.alert-icon.active {
+    display: flex;
+}
+
+.alert-content .text {
+    font-size: 80%;
+    text-align: center;
+    padding: .5rem 0;
+    display: none;
+}
+
+.alert-content .text.active {
+    display: block;
+}
+
+
+.alert-content button, .alert-content button:active {
+    /* background: #ff051ea7; */
+    background: #053fffa7;
+    color: #fff;
+    border-radius: 5rem;
+    padding: .5rem 1rem;
+    margin: .35rem;
+    scale: .9;
+}
+
+.alert-content button{
+    display: none;
+}
+
+.alert-content button.active {
+    display: block;
+}
+
+.alert-content button:hover {
+    background: #05ff69b2;
+}
+
+.alert-icon img {
+    height: 150%;
+    width: 150%;
+    display: none;
+}
+
+.alert-icon img.active {
+    display: block
+}
+
+.alert-content input {
+    width: 100%;
+}
+
+
+.alert-case .image-box {
+    height: 150px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.alert-content.edit button {
+    display: block;
+    border-radius: 10px;
+}
+
+.alert-content .right {
+    margin-bottom: 2rem;
+    margin-left: .5rem;
+}
+
+.alert-content.edit .del {
+    background: transparent;
+    text-decoration: underline;
+    color: rgb(255, 58, 58);
+}
+
+.alert-content.edit .input {
+    display: none;
+}
+
+.alert-content.edit .input.active {
+    display: block;
+}
+
+.alert-case .image-box .overlay {
+    background: #000000c1;
+    color: #fff;
+    cursor: pointer;
+}
+
+.image-box .overlay i {
+    font-size: 400%;
+}
+
+.image-box .overlay span {
+    font-size: 90%;
+}
+
+@media screen and (max-width: 490px) {
+    .alert-content.edit {
+        display: grid;
+    }
+
+    .alert-content.edit > * {
+        width: 100%;
+    }
+
+    .alert-content.edit .left {
+        margin-bottom: 1rem;
+    }
+
+    .alert-content.edit .button-case {
+        width: 100%;
+    }
+
+    .alert-content .button-case button {
+        width: 100%;
+    }
+}

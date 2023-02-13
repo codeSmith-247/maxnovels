@@ -1,0 +1,85 @@
+section {
+    font-family: 'Poppins', sans-serif;
+}
+
+.buttons {
+    padding: 1rem 4rem;
+}
+
+.buttons button {
+    padding: .65rem 1rem;
+    box-shadow: var(--the_shadow);
+    border-radius: 5rem;
+    margin-right: .5rem;
+}
+
+.darkmode .buttons button {
+    box-shadow: var(--darkmode_shadow);
+}
+
+.buttons button:hover, .buttons button.active {
+    background: var(--primary);
+    color: #fff;
+}
+
+.chapters {
+    padding: 0 4rem;
+    width: 800px;
+}
+
+.chapter {
+    box-shadow: var(--the_shadow);
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.chapter:hover {
+    background: #820dff1d;
+}
+
+.chapter .icon {
+    height: 70px;
+    width: 80px;
+    font-size: 260%;
+}
+
+.chapter .name {
+    font-size: 150%;
+
+}
+
+.darkmode .chapter {
+    box-shadow: var(--darkmode_shadow);
+}
+
+.chapter .views {
+    padding: 0 1rem;
+}
+
+.chapter .views i {
+    padding: 0 .5rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .chapters {
+        width: 100vw;
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .chapters {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .chapters {
+        font-size: 60%;
+    }
+
+    section, .buttons {
+        padding: 1rem !important;
+    }
+}

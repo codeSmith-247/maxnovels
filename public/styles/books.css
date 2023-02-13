@@ -1,0 +1,79 @@
+
+
+.container {
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.control {
+    --position: 10px;
+    background: var(--mode);
+    font-size: 180%;
+    width: 5px;
+}
+
+.control.left {
+    left: var(--position);
+}
+
+.control.right {
+    right: var(--position);
+}
+
+.box-box {
+    width: max-content;
+    padding: 1rem 0;
+}
+
+.box-box .space {
+    width: 30px;
+}
+
+.box {
+    --size: 100px;
+    background: var(--mode);
+    box-shadow: 5px 5px 5px #dbdbdb, -3px -3px 15px #d3cece2e;
+    border-radius: 10px;
+    height: var(--size);
+    width: var(--size);
+    margin: 0 .5rem;
+}
+
+.box .image {
+    border-radius: inherit;
+    height: 70%;
+    width: 90%;
+}
+
+.box .name {
+    font-size: 69%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.darkmode .box {
+    box-shadow: 5px 5px 5px #252525, -3px -3px 15px #978e8e2e;
+    
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.box:hover .image img{
+    transform: scale(1.05);
+}
+
+.box.active{
+    background: var(--primary);
+    color: #fff;
+}
+
+@media only screen and (max-width: 450px) {
+    section.books {
+        padding: 0 .5rem !important;
+    }
+}
+
+
+

@@ -1,0 +1,135 @@
+
+.details {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    height: 100vh;
+}
+
+.details .image {
+    box-shadow: var(--the_shadow);
+    border-radius: 10px;
+    width: 80%;
+    height: 90%;
+}
+
+.image .overlay {
+    background: #0505059d;
+    cursor: pointer;
+    color: #fff;
+    opacity: 1;
+}
+
+.image .overlay i {
+    font-size: 600%;
+}
+
+.image .overlay span, .submit.btn {
+    font-family: 'Poppins', sans-serif;
+}
+
+.image:hover .overlay {
+    opacity: 1;
+}
+
+.details .image img {
+    transform: scale(.95);
+    border-radius: inherit;
+}
+
+.darkmode .details .image, .darkmode .submit.btn {
+    box-shadow: var(--darkmode_shadow);
+}
+
+.details .right {
+    padding: 2rem;
+    overflow-y: scroll;
+}
+
+.details textarea {
+    height: 250px;
+}
+
+.submit.btn {
+    background: var(--primary);
+    color: #fff;
+    border-radius: 10px;
+    width: max-content;
+    box-shadow: var(--the_shadow);
+    padding: .35rem 1rem;
+    margin: .3rem 0;
+}
+
+.submit.btn i {
+    margin-right: .25rem;
+}
+
+.submit.btn.btm {
+    margin: 1rem 0;
+    padding: .65rem 2rem;
+}
+
+footer {
+    display: none;
+}
+
+@media only screen and (max-width: 950px) {
+    .details {
+        grid-template-columns: 280px 1fr;
+    }
+
+    .details .image {
+        height: 50%;
+    }
+
+    .image .overlay i {
+        font-size: 400%;
+    }
+
+    .image .overlay span {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .details {
+        grid-template-columns: 1fr;
+        height: max-content;
+    }
+
+    .details .image {
+        width: 250px;
+        height: 350px;
+
+        margin-top: 5rem;
+    }
+
+    .details .right {
+        padding: 2rem;
+        overflow-y: visible;
+    }
+
+    .right .top {
+        background: var(--mode);
+        box-shadow: var(--the_shadow);
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        padding: .3rem 2rem;
+        z-index: 5;
+    }
+
+    .darkmode .right .top {
+        box-shadow: var(--darkmode_shadow);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .details .right {
+        padding: 2rem 0;
+    }
+
+    .right .input {
+        transform: scale(.9);
+    }
+}

@@ -1,0 +1,43 @@
+
+.row {
+    background: var(--mode);
+    border: 3px solid rgba(238, 233, 233, 0.853);
+    border-radius: 10px;
+    box-shadow: var(--new_shadow);
+    padding: .65rem 1rem;
+    margin: 1rem 0;
+}
+
+.row.no-p {
+    padding:0;
+}
+
+.darkmode .row {
+    border-color: var(--shadow);
+    box-shadow: var(--new_darkmode);
+}
+
+
+.row .image {
+    --size: 50px;
+    border-radius: 10px;
+    height: var(--size);
+    width: var(--size);
+
+}
+
+.row .image img {
+    border-radius: inherit;
+}
+
+.active-circle {
+    --size: 10px;
+    width: var(--size);
+    height: var(--size);
+    
+    background: rgb(60, 255, 60);
+    border-radius: 50%;
+    
+    right: 0;
+    bottom: 1px;
+}

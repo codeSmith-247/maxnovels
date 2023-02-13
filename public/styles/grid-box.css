@@ -1,0 +1,29 @@
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 190px);
+    justify-content: space-between;
+    height: max-content;
+}
+
+@media only screen and (max-width: 500px) {
+    .grid-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-box .card {
+        width: 100%;
+        transform: scale(.9);
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .grid-box {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-box .card {
+        width: 100%;
+        transform: scale(.9);
+        margin-bottom: .5rem;
+    }
+}

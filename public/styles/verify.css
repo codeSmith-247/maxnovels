@@ -1,0 +1,68 @@
+body {
+    font-family: 'Poppins', sans-serif !important;;
+}
+
+h1 {
+    font-size: 300% !important;;
+}
+
+p {
+    font-size: 90%;
+}
+
+.verify-email {
+    height: 85vh;
+}
+
+.darkmode .verify-email a {
+  color: lightblue;
+}
+
+.verify-email a {
+  color: var(--primary);
+  text-decoration: underline !important;;
+}
+
+.verify-email > *{
+    text-align: center;
+    width: 500px;
+}
+
+footer, .nav-links, .nav-btn {
+    display: none !important;
+}
+
+button {
+    background: var(--primary) !important;
+    color: #fff !important;
+    border-radius: 10px;
+    box-shadow: var(-the_shadow);
+
+    padding: .5rem 2rem !important;
+    margin: 1rem 0 !important;
+}
+
+button:hover {
+    background: rgb(140, 40, 255) !important;
+}
+
+.darkmode button {
+    box-shadow: var(--darkmode_shadow);
+}
+
+@media screen and (max-width: 600px) {
+    .verify-email > *{
+        text-align: center;
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    h1 {
+        font-size: 200% !important;;
+    }
+    
+    p {
+        font-size: 80%;
+    }
+}

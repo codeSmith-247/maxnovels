@@ -1,0 +1,259 @@
+footer {
+    display: none;
+}
+
+h1,
+h4 {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1 {
+    font-size: 300% !important;
+    font-weight: 600;
+    transform: scale(.9);
+}
+
+section,
+.banner {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.banner {
+    height: 30vh;
+}
+
+.banner .overlay {
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.619);
+}
+
+.darkmode .overlay {
+    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0.619);
+}
+
+.avatar {
+    --size: 50px;
+    height: var(--size);
+    width: var(--size);
+}
+
+.author .name {
+    padding: 0 .5rem;
+}
+
+.nav {
+    background: var(--mode);
+    box-shadow: var(--the_shadow);
+    height: 70px;
+    padding: 0 1rem;
+}
+
+.nav.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    transform: scale(.9);
+    border-radius: 20px;
+}
+
+.darkmode .nav,
+.darkmode .nav .control {
+    box-shadow: var(--darkmode_shadow);
+}
+
+.menu-btn {
+    font-size: 250%;
+}
+
+.menu-btn.bookmark {
+    font-size: 200%;
+}
+
+.menu-btn.bookmark i:nth-of-type(2),
+.menu-btn.bookmark.active i:nth-of-type(1) {
+    display: none;
+}
+
+.menu-btn.bookmark.active {
+    color: rgb(65, 255, 65);
+}
+
+.menu-btn.bookmark.active i:nth-of-type(2) {
+    display: block;
+}
+
+.nav h4 {
+    font-size: 120%;
+}
+
+.nav .control {
+    --size: 30px;
+    box-shadow: var(--the_shadow);
+    height: var(--size);
+    width: var(--size);
+    font-size: 120%;
+    padding: 0 .5rem;
+    margin: 0 1rem;
+}
+
+.nav .control:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+.reader-area {
+    display: grid;
+    grid-template-columns: 250px 4fr;
+    min-height: 100vh;
+}
+
+.reader-area.active {
+    grid-template-columns: 1fr;
+}
+
+.reader-slate {
+    /* box-shadow: var(--the_shadow); */
+    /* transform: scale(.9); */
+    line-height: 2;
+    word-spacing: 4px;
+    font-size: 80%;
+    padding: 2rem 4rem;
+}
+
+
+
+.reader-slate p {
+    line-height: 2;
+    font-size: 120%;
+}
+
+.reader-area .menu {
+    box-shadow: var(--the_shadow);
+    padding: .5rem 0;
+    height: 100%;
+}
+
+.darkmode .reader-area .menu,
+.darkmode .tab_select {
+    box-shadow: var(--darkmode_shadow);
+}
+
+.tab_select {
+    box-shadow: var(--the_shadow);
+}
+
+.tab_select>*:hover {
+    background: var(--primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+.tab_select>*.active {
+    background: rgb(126, 20, 255);
+    color: #fff;
+}
+
+.menu .menu-item {
+    padding: .75rem 1rem;
+    margin: .75rem .5rem;
+    border-radius: 10px;
+}
+
+.menu .chapter-menu.disabled,
+.bookmark-menu.disabled {
+    display: none;
+}
+
+.menu .menu-item:hover,
+.menu-item.active {
+    box-shadow: var(--the_shadow);
+}
+
+.darkmode .menu-item:hover,
+.darkmode .menu-item.active {
+    box-shadow: var(--darkmode_shadow);
+}
+
+.menu-item i {
+    font-size: 120%;
+    margin: 0 .5rem;
+}
+
+.close-box {
+    display: none;
+}
+
+@media only screen and (min-width: 920px) {
+
+    .menu.active {
+        width: 0;
+        overflow: hidden;
+        position: fixed;
+    }
+
+}
+
+
+@media only screen and (max-width: 920px) {
+    .menu {
+        background: var(--mode);
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        z-index: 5;
+        width: 250px;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    .reader-area {
+        grid-template-columns: 1fr;
+    }
+
+    .close-box {
+        display: flex;
+        padding-bottom: .5rem;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    h1 {
+        font-size: 240% !important;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    h1 {
+        font-size: 200% !important;
+    }
+
+    .reader-slate {
+        padding: 2rem;
+
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 150% !important;
+        padding: .5rem 0;
+    }
+
+    .author .name {
+        font-size: 80%;
+    }
+
+    .reader-slate {
+        padding: 2rem 1.5rem;
+
+    }
+}

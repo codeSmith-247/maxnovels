@@ -1,0 +1,60 @@
+
+
+.avatar .image {
+    --size: 200px;
+    box-shadow: var(--the_shadow);
+    height: var(--size);
+    width: var(--size);
+}
+
+.darkmode .avatar .image {
+    box-shadow: var(--darkmode_shadow);
+}
+
+.avatar .name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 120%;
+    padding: .5rem 0;
+}
+
+.avatar .overlay {
+    background: #0505058b;
+    cursor: pointer;
+    font-size: 300%;
+    color: #fff;
+    opacity: 0;
+}
+
+.avatar .image:hover .overlay {
+    opacity: 1;
+}
+
+.avatar button {
+    box-shadow: var(--the_shadow);
+    border-radius: 5rem;
+    padding: .25rem 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.avatar button:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+.darkmode .avatar button {
+    box-shadow: var(--darkmode_shadow);
+}
+
+.avatar button i {
+    font-size: 140%;
+}
+
+.search-box {
+    margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 400px) {
+    section.books {
+        padding: 0 !important;
+    }
+}

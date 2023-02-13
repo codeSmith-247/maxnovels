@@ -1,0 +1,88 @@
+
+section {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    height: 100vh;
+}
+
+footer {
+    display: none;
+}
+
+.image-box {
+    height: 100vh;
+}
+
+.darkmode .overlay {
+    background: #0000006e;
+}
+
+form {
+    padding: 0 2rem;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+h1 {
+    font-size: 200% !important;
+    font-weight: 900 !important;
+    padding: 1rem 0;
+}
+
+.logo {
+    width: max-content
+}
+
+.input button {
+    background: var(--mode);
+    border: 3px solid var(--shadow);
+    border-radius: 10px;
+    box-shadow: var(--the_shadow);
+    outline: none !important;
+    width: 100%;
+    padding: .65rem 1rem !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 100% !important;
+}
+
+.input button {
+    background: var(--primary) !important;
+    color: #fff !important;
+}
+
+.input button.red {
+    background: #de5246 !important;
+}
+
+.darkmode .input button {
+    box-shadow: var(--darkmode_shadow);
+}
+
+.input button {
+    margin: 1rem 0;
+}
+
+.input.info {
+    font-size: 80%;
+}
+
+.input a {
+    color: var(--primary);
+    
+    text-decoration: underline
+    /* text-decoration: none; */
+}
+
+.darkmode .input a {
+    color: lightblue
+}
+
+@media only screen and (max-width: 500px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    section .image-box {
+        display: none;
+    }
+}

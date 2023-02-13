@@ -1,0 +1,46 @@
+
+.row {
+    display: grid;
+    grid-template-columns: 60px 200px 200px 70px 120px;
+    min-width: 660px;
+    text-align: center;
+}
+
+/* .row > * {
+    background: red;
+} */
+
+.row.title {
+    margin-bottom: 1.2rem !important;
+}
+
+.row.value {
+    padding: .5rem;
+}
+
+.row.value:hover {
+    background: rgba(118, 91, 255, 0.153);
+}
+
+.row.value button {
+    background: var(--primary) !important;
+    border-radius: 10px;
+    box-shadow: var(--new_shadow);
+    color: #fff;
+    padding: .35rem 1rem !important;
+
+}
+
+.darkmode .row.value button {
+    box-shadow: var(--new_darkmode);
+}
+
+
+.shelf {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+/* .shelf .content {
+    width: 650px;
+} */

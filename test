@@ -1,0 +1,18 @@
+#!/bin/bash
+php artisan make:model Chapter -m &&
+php artisan make:model Author -m &&
+php artisan make:model Category -m &&
+php artisan make:model Tag -m &&
+php artisan make:model Language -m &&
+php artisan make:model Character -m &&
+php artisan make:model Audience -m &&
+php artisan make:model Rating -m &&
+php artisan make:model AuthorToBook -m &&
+php artisan make:model UserToBook -m &&
+php artisan make:model CategoryToBook -m &&
+php artisan make:model TagToBook -m &&
+php artisan make:model LanguageToBook -m &&
+php artisan make:model CharacterToBook -m &&
+php artisan make:model AudienceToBook -m &&
+php artisan make:model RatingToBook -m &&
+php artisan make:model ChapterToBook -m

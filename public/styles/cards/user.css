@@ -1,0 +1,14 @@
+.card button .del {
+    background: rgb(255, 57, 57);
+    --size: 40px;
+    height: 100%;
+    width: var(--size);
+    font-size: 166%;
+
+    opacity: 0;
+}
+
+
+.card:hover .del {
+    opacity: 1;
+}

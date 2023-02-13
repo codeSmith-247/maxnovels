@@ -1,0 +1,49 @@
+
+
+.scroll {
+    min-height: 70px;
+    width: 100%;
+}
+
+
+.scroll .control {
+    --size: 50px;
+    --position: 1px;
+    background: var(--mode);
+    box-shadow: var(--the_shadow);
+    height: var(--size);
+    width: var(--size);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.darkmode .scroll .control {
+    box-shadow: var(--darkmode_shadow);
+}
+
+.scroll .control.left {
+    left: var(--position);
+}
+
+.scroll .control.right {
+    right: var(--position);
+}
+
+.scroll .scroll-box {
+    /* background: red; */
+    height: max-content;
+    min-height: 70px;
+    width: 100%;
+    padding: 1rem .5rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.scroll .scroll-box .content {
+    width: max-content;
+}
+
+.scroll .scroll-box .content > * {
+    margin: 0 .5rem;
+}

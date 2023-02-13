@@ -1,0 +1,88 @@
+
+.input {
+    font-family: 'Poppins', sans-serif ;
+    padding: .5rem 0;
+}
+
+.error {
+    background: var(--shadow);
+    border-radius: 10px;
+    color: rgb(245, 22, 22);
+    padding: .5rem;
+    margin: .5rem 0;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 80%;
+}
+
+.input .add-btn {
+    background: rgb(90, 24, 255);
+    border-radius: 0 10px 10px 0;
+    color: #fff;
+    width: 50px;
+    font-size: 200%;
+}
+
+.darkmode {
+    color: rgb(255, 133, 133);
+
+}
+
+.input input, .input select, .input textarea {
+    background: var(--mode);
+    border: 3px solid var(--shadow);
+    border-radius: 10px;
+    box-shadow: var(--the_shadow);
+    outline: none !important;
+    width: 100%;
+    padding: .65rem 1rem !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 100% !important;
+}
+label {
+    font-family: 'Poppins', sans-serif !important;
+    padding: .05rem 0;
+}
+
+.darkmode input, .darkmode select, .darkmode textarea {
+    box-shadow: var(--darkmode_shadow);
+}
+
+.show-btn {
+    color: lightgrey;
+    cursor: pointer;
+    font-size: 150%;
+}
+
+.show-btn i:nth-of-type(2), .show-btn.active i:nth-of-type(1) {
+    display: none;
+}
+
+.show-btn.active i:nth-of-type(2) {
+    display: block;
+}
+
+.lists .item {
+    box-shadow: var(--new_shadow);
+    width: max-content;
+    padding: .5rem 1rem;
+    margin: .95rem;
+}
+
+.darkmode .lists .item {
+    box-shadow: var(--new_darkmode);
+}
+
+.lists .item .icon {
+    background: rgba(255, 96, 96, 0.495);
+    box-shadow: var(--new_shadow);
+    --size: 20px;
+    font-size: 80%;
+
+    height: var(--size);
+    width: var(--size);
+    margin: .25rem;
+}
+
+.darkmode .lists .item .icon {
+    box-shadow: var(--new_darkmode);
+}

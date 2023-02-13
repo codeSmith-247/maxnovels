@@ -1,0 +1,150 @@
+
+
+.user_moderate_case {
+    background: #00000083;
+    display: none;
+}
+
+.user_moderate_case.active {
+    display: flex;
+}
+
+.moderate_box {
+    background: var(--mode);
+    box-shadow: 0 0 5px #00000074;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+    --height: 400px;
+
+    width: 700px;
+    height: var(--height);
+}
+
+
+.moderate_box .user_image_box {
+    border-radius: 10px;
+    height: 90%;
+}
+
+.moderate_box button {
+    background: var(--primary);
+    box-shadow: var(--the_shadow);
+    border-radius: 10px;
+
+    color: #fff;
+
+    padding: .5rem 1rem;
+    margin: .25rem 0;
+
+    width: 100%;
+
+}
+
+.darkmode .moderate_box button {
+    box-shadow: var(--darkmode_shadow);
+}
+
+.moderate_box .right {
+    padding: 1rem 0;
+    font-size: 80%;
+    height: var(--height); 
+}
+
+.moderate_box .left {
+    height: var(--height);
+    /*! width: 200px; */
+}
+
+.moderate_box .right .content {
+    overflow-y: scroll;
+    height: 90%;
+}
+
+.moderate_box .input {
+    transform: scale(.9);
+    padding: 0;
+}
+
+.moderate_box .input input {
+    box-shadow: none;
+    padding: .5rem;
+}
+
+.moderate_box .btn-box button {
+    width: 49% !important;
+}
+
+.moderate_box button.del {
+    background: transparent;
+    box-shadow: none;
+    color: rgb(255, 114, 114);
+    text-decoration: underline;
+}
+
+.moderate_box .left button {
+    transform: scale(.9);
+}
+
+.moderate_box .close-btn {
+    --size: 40px;
+    background: var(--mode);
+
+    height: var(--size);
+    width: var(--size);
+
+    top:   -12px;
+    right: -12px;
+
+    z-index: 4;
+}
+
+.moderate_box .close-btn:hover {
+    background: rgb(255, 114, 114);
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.add-new {
+    visibility: hidden;
+}
+
+
+@media only screen and (max-width: 725px) {
+    .moderate_box {
+        grid-template-columns: 1fr;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 290px
+    }
+    
+    .moderate_box .left {
+        height: max-content;
+    }
+    
+    .moderate_box .user_image_box {
+        height: 200px;
+        width: 290px;
+    }
+    
+    .moderate_box .right .content {
+    
+        overflow-y: visible;
+        height: max-content;
+        padding-bottom: 0;
+    
+    }
+    
+    .moderate_box .right {
+        height: max-content;
+    }
+    
+    .moderate_box .close-btn {
+      top: 5px;
+      right: 5px;
+    }
+
+}

@@ -1,0 +1,102 @@
+
+.preview-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1rem;
+}
+
+.card {
+    box-shadow: var(--new_shadow);
+    border-radius: 10px;
+    height: 120px;
+    transform: scale(.9);
+}
+
+.darkmode .card {
+    box-shadow: var(--new_darkmode);
+}
+
+.card .value {
+    font-size: 250%;
+    font-weight: 900;
+}
+
+.split {
+    margin-top: 2rem;
+}
+
+
+.split .left {
+    padding: 1rem;
+}
+
+/* .split .right {
+    background: yellow;
+} */
+
+.split button {
+    border-radius: 10px;
+    box-shadow: var(--new_shadow);
+    padding: .35rem 1rem;
+
+}
+
+.darkmode .split button {
+    box-shadow: var(--new_darkmode);
+}
+
+.split button:hover {
+    background: var(--primary) !important;
+    color: #fff;
+}
+
+.split .top {
+    margin-bottom: 1rem;
+}
+
+.split .name {
+    padding: 0 .5rem;
+}
+
+canvas {
+    transform: scale(.8);
+}
+
+.active-circle {
+    --size: 10px;
+    width: var(--size);
+    height: var(--size);
+    
+    background: rgb(60, 255, 60);
+    border-radius: 50%;
+    
+    right: 0;
+    bottom: 1px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .split {
+        display: grid;
+    }
+
+    .split > * {
+        width: 100%;
+    }
+
+    .split .right {
+        grid-row: 1/3;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .preview-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .preview-cards {
+        grid-template-columns: 1fr;
+    }
+}

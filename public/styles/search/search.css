@@ -1,0 +1,40 @@
+
+.search {
+    /* border: 1px solid #999; */
+    background: var(--main);
+    box-shadow: 5px 5px 5px #dbdbdb, -3px -3px 15px #d3cece2e;
+    border-radius: 5rem;
+
+}
+
+.darkmode .search {
+    box-shadow: 5px 5px 5px #252525, -3px -3px 15px #978e8e2e;
+}
+
+input {
+    background: transparent;
+    border: none;
+    color: inherit;
+    outline: none !important;
+    padding: .75rem 1rem !important;
+    font-size: 100%;
+    font-family: "Poppins", sans-serif !important;
+    height: 40px;
+}
+
+.search button {
+    background: var(--primary);
+    border: none;
+    border-radius: 5rem;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+
+    font-size: 150%;
+}
+
+@media only screen and (max-width: 460px) {
+    .search input {
+        width: 60vw;
+    }
+}

@@ -1,0 +1,150 @@
+
+footer {
+    display: none;
+}
+
+nav {
+    height: 70px;
+    box-shadow: var(--the_shadow);
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.darkmode nav, .darkmode button {
+    box-shadow: var(--darkmode_shadow);
+}
+
+input {
+    background: var(--mode) !important;
+    border: none !important;
+    font-size: 300% !important;
+    font-family: 'Poppins', sans-serif !important;
+    outline: none !important;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+#editor, #editor * {
+    outline: none !important;
+    border: none !important;
+}
+
+#editor {
+    padding: 1rem !important;
+    font-size: 120% !important;
+}
+
+#editor p {
+    line-height: 2;
+}
+
+.ql-toolbar button {
+    margin: .25rem !important;
+}
+
+.darkmode .ql-toolbar.ql-snow  * {
+    color: #fff !important;
+}
+
+.darkmode .ql-snow .ql-stroke {
+    fill: none;
+    stroke: #fff !important;
+}
+
+.ql-snow.ql-toolbar button, .ql-snow .ql-toolbar button {
+    height: max-content !important;
+    width: max-content !important;
+}
+
+.ql-snow.ql-toolbar button svg, .ql-snow .ql-toolbar button svg {
+    height: 15px !important;
+}
+
+.ql-snow .ql-picker-options {
+    background-color: var(--mode) !important;
+}
+
+.darkmode .ql-snow .ql-stroke,
+.darkmode .ql-snow .ql-fill, 
+.darkmode .ql-snow .ql-stroke.ql-fill
+{
+    stroke: #fff !important;
+}
+
+.darkmode .ql-snow .ql-tooltip {
+    background-color: var(--mode) !important;
+    border: 1px solid var(--mode) !important;
+    box-shadow: var(--darkmode_shadow) !important;
+    color: #fff !important;
+}
+
+.ql-snow .ql-tooltip input[type="text"] {
+    font-size: 90% !important;
+}
+
+.chapter-title {
+    border-bottom: 1px solid lightgrey;
+    margin: 1rem .5rem;
+    padding-bottom: 1rem;
+}
+
+button {
+    box-shadow: var(--the_shadow);
+    border-radius: 5rem;
+    cursor: pointer;
+    padding: .5rem 1rem !important;
+    margin: 0 .5rem !important;
+}
+
+button:hover {
+    background: var(--primary);
+    color: #fff;
+
+}
+
+button.save:hover {
+    background: rgb(53, 197, 53);
+}
+
+#ql-picker-options-0 {
+    background: var(--mode);
+}
+
+.icon-delete {
+    --size: 55px;
+    background: rgb(255, 67, 67);
+    box-shadow: var(--the_shadow);
+    color: #fff;
+    cursor: pointer;
+    height: var(--size);
+    width: var(--size);
+    font-size: 200%;
+    bottom: 90px;
+    right: 10px;
+}
+.icon-delete:hover {
+    background: rgb(255, 30, 30);
+}
+
+.darkmode .icon-delete {
+    box-shadow: var(--darkmode_shadow);
+}
+
+@media only screen and (max-width: 850px) {
+    input {
+        font-size: 200% !important;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    input {
+        font-size: 120% !important;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+
+    .book-name {
+        font-size: 70%;
+    }
+}

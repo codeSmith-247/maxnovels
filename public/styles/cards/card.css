@@ -1,0 +1,99 @@
+
+.card {
+    background: var(--mode);
+    border-radius: 10px;
+    background: linear-gradient(145deg, #fff, #fdfdfd);
+    box-shadow: 13px 13px 25px #dbdbdb91, -13px -13px 25px #fff;
+    height: 330px;
+    width: 180px;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.darkmode .card {
+    background: var(--mode);
+    box-shadow: 5px 5px 5px #252525, -3px -3px 15px #978e8e2e;
+}
+
+.card .image {
+    background: var(--shadow);
+    border-radius: 10px;
+    height: 65%;
+    width: 90%;
+}
+
+.card:hover .image img {
+    transform: scale(1.1);
+}
+
+.card .details {
+    margin-top: .5rem;
+    width: 90%;
+    height: 20%;
+}
+
+.card h6 {
+    font-size: 80%;
+    height: 35px;
+    overflow: hidden;
+}
+
+.card button {
+    background: #4f72fc;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    outline: none;
+    padding: .5rem;
+    width: 100%;
+    margin-top: .5rem;
+    letter-spacing: .5px;
+
+    font-size: 70%;
+}
+
+.card:hover {
+    background: #4f71fc15;
+}
+
+/* .card:hover button {
+    background: #333;
+    color: #fff;
+
+} */
+
+.card .latest {
+    border-radius: 5px;
+    color: #fff;
+    width: max-content;
+    transform: rotate(0deg);
+    font-size: 70%;
+}
+
+.card .latest .tag {
+    background: #4f72fc;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: .35rem;
+}
+
+.card .latest .chapter {
+    background: #001568;
+    padding: .35rem;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.darkmode .card .latest .chapter {
+    background: var(--mode)
+}
+
+.card:hover .chapter {
+    background: var(--primary);
+}
+
+.card .latest span {
+    padding: 0 .15rem;
+}

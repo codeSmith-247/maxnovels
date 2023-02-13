@@ -1,0 +1,38 @@
+
+input, select, textarea {
+    background: var(--mode);
+    border: 3px solid var(--shadow);
+    border-radius: 10px;
+    box-shadow: var(--the_shadow);
+    outline: none !important;
+    padding: .65rem 1rem !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 100% !important;
+}
+
+.darkmode input, .darkmode select, .darkmode textarea {
+    box-shadow: var(--darkmode_shadow);
+}
+
+.search-box input {
+    border-radius: 5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+}
+
+.search-box select {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 530px) {
+    .search-box input {
+        width: 70vw;
+    }
+
+    .search-box select {
+        width: 20vw;
+    }
+}

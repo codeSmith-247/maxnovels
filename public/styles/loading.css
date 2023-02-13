@@ -1,0 +1,54 @@
+.loading .imagee {
+    --size: 150px;
+    height: var(--size);
+    width: var(--size);
+    opacity: .5;
+
+}
+
+.loading-box {
+    height: 200px;
+    display: none;
+}
+
+.loading-box.active {
+    display: flex;
+}
+
+.loading {
+    background: var(--mode);
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+}
+
+.darkmode .loading {
+    /* background: #1b1d1f; */
+    opacity: .5;
+
+}
+
+.darkmode img.lightmode,
+.loading-box.errorr .darkmode, 
+.loading-box.errorr .lightmode,
+.errorr,
+.loading,
+.loading.errorr img,
+img.darkmode {
+    display: none;
+}
+
+.darkmode .loading.active img.darkmode,
+.loading-box.errorr .errorr,
+.loading.errorr .errorr {
+    display: block;
+}
+
+.loading.active, 
+.loading-box.active .loading, 
+.loading-box.errorr .loading,
+.loading.errorr {
+    display: flex;
+}
+
+
+

@@ -1,0 +1,40 @@
+.large-card {
+    box-shadow: 0 0 5px var(--shadow);
+    background: linear-gradient(145deg, #fff, #fdfdfd);
+    box-shadow: 5px 5px 5px #dbdbdb, -3px -3px 15px #d3cece2e;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 200px;
+    width: 100%;
+
+}
+
+.darkmode .large-card {
+    background: var(--mode);
+    box-shadow: 5px 5px 5px #252525, -3px -3px 15px #978e8e2e;
+}
+
+.large-card .image {
+    border-radius: 5px;
+    transform: scale(.95);
+
+}
+
+.large-card:hover .image img {
+    transform: scale(1.1);
+}
+
+.large-card .details {
+    backdrop-filter: blur(30px);
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Inter', sans-serif;
+    padding: 1rem 1rem;
+    bottom: -1px;
+}
+
+.large-card .views span {
+    padding: 0 .25rem ;
+    font-size: 70%;
+}
+

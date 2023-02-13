@@ -1,0 +1,16 @@
+
+
+section {
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif !important;
+    line-height: 2;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+section h1 {
+    font-weight: 900 !important;
+    font-size: 220% !important;
+}

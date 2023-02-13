@@ -1,0 +1,153 @@
+
+
+.admin-panel {
+    display: grid;
+    grid-template-columns: 250px calc(100vw - 250px);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.admin-panel.active {
+    grid-template-columns: 0px 1fr;
+}
+
+.add-new {
+    --size: 40px;
+    height: var(--size);
+    width: var(--size);
+
+    background: rgb(39, 179, 81);
+    color: #fff;
+    box-shadow: var(--the_shadow);
+    border-radius: 10px;
+    /* padding: .4rem 1rem; */
+    font-size: 200%;
+}
+
+
+
+.darkmode .add-new {
+    box-shadow: var(--darkmode_shadow);
+}
+
+.content-area {
+    background: var(--mode);
+    z-index: 2;
+}
+
+.menu {
+    /* background: black; */
+    border-right: 2px solid #222;
+    width: 250px;
+
+}
+
+.menu .menu-top {
+    padding: 1rem;
+}
+
+.menu .logo {
+    width: max-content;
+}
+
+.menu .menu-item {
+    padding: .45rem 1rem;
+    margin: 1rem .65rem;
+    border-radius: 5px;
+    box-shadow: var(--new_shadow);
+}
+
+.menu-item i {
+    margin: 0 .75rem;
+    margin-left: 0;
+    font-size: 120%;
+
+}
+
+.darkmode .menu .menu-item {
+    box-shadow: var(--new_darkmode);
+}
+
+
+.content-area .content {
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    padding-bottom: 5rem;
+}
+
+.nav {
+    box-shadow: var(--the_shadow);
+    height: 60px;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.darkmode .nav {
+    box-shadow: var(--darkmode_shadow);
+}
+
+
+.menu-btn {
+    cursor: pointer;
+    font-size: 180%;
+    transform: scaleX(1.1);
+}
+
+
+.nav .image {
+    --size: 50px;
+    height: var(--size);
+    width: var(--size);
+}
+
+.nav .name {
+    margin-left: .5rem;
+
+}
+
+.menu-close {
+    display: none;
+}
+
+
+@media only screen and (max-width: 840px) {
+    .admin-panel, .admin-panel.active {
+        grid-template-columns: 100vw;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -200vw;
+        z-index: 3;
+        height: 100vh;
+        background: var(--mode);
+    }
+
+    .admin-panel.active .menu {
+        left: 0
+    }
+
+    .menu-close {
+        display: flex;
+        font-size: 130%;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .admin-search, .admin-search .search-box {
+        transform: scale(.9);
+    }
+    
+
+    .book-panel {
+        padding: 0 !important;
+    }
+}
+
+footer {
+    display: none;
+}
